@@ -33,10 +33,7 @@
             const wrapper = editor.getWrapperElement()
             wrapper.classList.add(...classList);
             Object.entries(styles).forEach(([key, value]) => {
-                try {
-                    wrapper.style[key] = value;
-                } finally {
-                }
+                wrapper.style[key] = value;
             });
 
             const evnames = "click mousedown mouseup focus blur keydown change dblclick mousemove mouseover mouseout mousewheel keydown keyup keypress textInput touchstart touchmove touchend touchcancel resize scroll zoom select change submit reset".split(" ");
